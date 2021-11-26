@@ -1,0 +1,290 @@
+# Page settings
+
+baseURL = "http://example.org/"
+languageCode = "en"
+title = ""
+theme = "hugo-devresume-theme"
+googleAnalytics = "UA-XXXXXXX-Y"
+
+
+
+
+
+
+[params]
+    author = "StefanoLanza"
+    description = "DevResume - Bootstrap 4 Resume/CV Template For Software Developers"
+
+
+# TODO Change to blue
+    primaryColor = "#54B689"
+    textPrimaryColor = "#292929"
+
+
+
+
+    [params.profile]
+        enable = true
+        name = "Stefano Lanza"
+        tagline = "Principal Software Engineer"
+        avatar = "avatar.png"
+
+
+
+
+
+
+
+    [params.contact]
+        enable = true
+        location = "Barcelona"
+
+        [[params.contact.list]]
+        icon = "fas fa-phone-square"
+        url = "tel:#"
+        text = "+34 768729888"
+        [[params.contact.list]]
+        icon = "fas fa-envelope-square"
+        url = "mailto:#"
+        text = "steflanz@gmail.com"
+#        [[params.contact.list]]
+#        icon = "fas fa-globe"
+#        url = "#"
+#        text = "www.yourwebsite.com"
+
+    [params.summary]
+        enable = true
+        text = "I am highly experienced in the design and programming of technology solutions for games and other performance critical applications, with a specialization in graphics, game engines and C/C++ programming."
+
+    [params.skills]
+        enable = true
+
+        [[params.skills.list]]
+        title = "Technical"
+        [[params.skills.list.items]]
+        details = "C/C++ Programming"
+        [[params.skills.list.items]]
+        details = "GPU/Shader Programming"
+        [[params.skills.list.items]]
+        details = "Game Engine Design and Programming"
+        [[params.skills.list.items]]
+        details = "Python/Lua Programming"
+        [[params.skills.list.items]]
+        details = "Object-oriented design"
+        [[params.skills.list.items]]
+        details = "Lead and deliver complex software systems"
+
+        [[params.skills.list]]
+        title = "Professional"
+        [[params.skills.list.items]]
+        details = "Effective communication"
+        [[params.skills.list.items]]
+        details = "Team player"
+        [[params.skills.list.items]]
+        details = "Strong problem solver"
+        [[params.skills.list.items]]
+        details = "Good time management"
+
+
+
+
+
+
+
+
+    [params.education]
+        enable = true
+
+        [[params.education.list]]
+        degree = "Master thesis on AI vision system"
+        university = "Universite Libre de Bruxelles"
+        dates = "2004 - 2005"
+        [[params.education.list]]
+        degree = "Degree in Telecommunications Engineering"
+        university = "Politecnico di Milano"
+        dates = "1999 - 2005"
+   #     [[params.education.list]]
+   #     degree = "BSc Maths and Physics"
+   #     university = "Imperial College London"
+   #     dates = "2007 - 2010"
+
+
+
+
+
+
+
+
+    [params.awards]
+        enable = false#true
+
+        [[params.awards.list]]
+        name = "Award Lorem Ipsum"
+        body = "Microsoft lorem ipsum"
+        date = "2019"
+        [[params.awards.list]]
+        name = "Award Donec Sodales"
+        body = "Oracle Aenean"
+        date = "2017"
+
+
+
+
+
+
+
+
+    [params.languages]
+        enable = true
+
+        [[params.languages.list]]
+        name = "Italian"
+        level = "Native"
+        [[params.languages.list]]
+        name = "English"
+        level = "Professional"
+        [[params.languages.list]]
+        name = "Spanish"
+        level = "Professional"
+
+
+
+
+
+
+
+
+    [params.interests]
+        enable = true
+
+        [[params.interests.list]]
+        name = "Triathlon"
+        [[params.interests.list]]
+        name = "Cinema"
+        [[params.interests.list]]
+        name = "Travelling"
+        [[params.interests.list]]
+        name = "Retro gaming"
+
+
+    [params.experience]
+        enable = true
+
+        [[params.experience.list]]
+        title = "Principal Software Engineer"
+        dates = "Sep 2020 - Nov 2021"
+        company = "Foundry"
+		details = "My contributions:"
+#        [[params.experience.list]]
+        [[params.experience.list.items]]
+        details = "FoundryGL - an OpenGL emulation layer built on top of Mesa / Zinc / Metal"
+        [[params.experience.list.items]]
+        details = "AVP - OpenGL based advanced rendering framework"
+        [[params.experience.list.items]]
+        details = "USD rendering plugin for Katana and Nuke and Pixar's USDView"
+        [[params.experience.list.items]]
+        details = "Misc. improvements and bug fixes for Foundry's DCC products"
+
+        [[params.experience.list]]
+        title = "Senior Game Developer"
+        dates = "Jan 2018 - Apr 2020"
+        company = "Social Point"
+        [[params.experience.list.items]]
+		details = "Added support for in-game-purchases through the Microsoft store"
+        [[params.experience.list.items]]
+		details = "Extended Cocos2dx to load assets from compressed archives"
+        [[params.experience.list.items]]
+		details = "Integrated libwebsockets for network-based services"
+        [[params.experience.list.items]]
+		details = " Integrated Spine in the in-house engine for 2D animations"
+
+        [[params.experience.list]]
+        title = "Subcontractor Software Engineer"
+        dates = "Jan 2016 - May 2016"
+        company = "Zerolight"
+        details = "R&D on photo realistic, real-time visualization of cars for the automotive industry, using the Unity engine."
+        [[params.experience.list.items]]
+		details = "Elliptical filtering for high quality anti-aliased, anisotropic texture mapping"
+        [[params.experience.list.items]]
+		details = "High quality, alias free image filters"
+
+        [[params.experience.list]]
+        title = "Senior Developer"
+        dates = "Sep 2013 - Dec 2015"
+        company = "Havok"
+        details = "As part of the Military & Simulation team, I worked on:"
+        [[params.experience.list.items]]
+		details = "HLA based network library, for the synchronization of systems simulating vehicles, articulated parts and characters"
+        [[params.experience.list.items]]
+		details =  "Photo-realistic, unconstrained rendering of the Earth atmosphere, for the proprietary Vision engine"
+        [[params.experience.list.items]]
+		details =  "Real-time ambient lighting based on spherical harmonics"
+
+        [[params.experience.list]]
+        title = "Senior Graphics Programmer"
+        dates = "May 2011 - Dec 2012"
+        company = "Jagex"
+        details = "As part of the rendering team for the game Transformers Universe, I developed most of the components of its DirectX 9 graphics engine:"
+        [[params.experience.list.items]]
+		details =  "Particles and Visual FXs"
+        [[params.experience.list.items]]
+		details =  "Terrain system with LOD, material painting and heightmap sculpting, ground cover"
+        [[params.experience.list.items]]
+		details =  "Lighting (cascaded shadow mapping, point lights)"
+
+        [[params.experience.list]]
+        title = "Senior Rendering Programmer"
+        dates = "Jan 2010 - Jan 2011"
+        company = "Frontier"
+        details = "I was part of the rendering team of The Outsider, an unreleased AAA title for the Xbox360, PS3 and Windows platforms. My contributions were:"
+        [[params.experience.list.items]]
+		details = "water rendering, indexed deferred lighting, aerial scattering, lens flares rendering, volumetric lighting, deferred transparency"
+
+
+
+
+
+
+
+
+
+
+
+    [params.projects]
+        enable = true
+
+        [[params.projects.list]]
+        title = "Typhoon"
+        meta = "Open Source"
+        tagline = "Typhoon is a game engine specialized in the simulation and rendering of planetary-scale outdoor environments. It is based on DirectX-11. Part of its technology has been integrated into a commercial iOS game, a scuba diving simulator and an underwater robotic simulation"
+
+    [params.information]
+        enable = true
+
+        [[params.information.list]]
+        title = "Publications"
+        [[params.information.list.items]]
+        details = "2006 · Animation and Rendering of Underwater God Rays · ShaderX 5, Charles River Media"
+        [[params.information.list.items]]
+        details = "2004 · Animation and Display of Water · ShaderX 3, Charles River Media"
+
+    [params.social]
+        enable = true
+
+        [[params.social.list]]
+        icon = "fab fa-github-square"
+        url = "//github.com/StefanoLanza"
+        title = "StefanoLanza"
+        [[params.social.list]]
+        icon = "fab fa-linkedin"
+        url = "//linkedin.com/in/steflanz"
+        title = "steflanz"
+        [[params.social.list]]
+        icon = "fab fa-twitter-square"
+        url = "//twitter.com/typhoonengine"
+        title = "@typhoonengine"
+
+
+
+
+
